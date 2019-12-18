@@ -12,7 +12,7 @@ extension Services {
         services.register(RunningServerCache.self)
 
         // client
-        services.register(FoundationClient.self)
+//        services.register(FoundationClient.self)
 
         // router
         services.register(EngineRouter.default(), as: Router.self)

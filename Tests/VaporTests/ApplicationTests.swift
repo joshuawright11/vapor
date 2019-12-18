@@ -898,8 +898,6 @@ private extension Application {
             using: self
         )
         try beforeSend(req)
-        let res = try FoundationClient.default(on: self).send(req).wait()
-        try afterSend(res)
         return self
     }
 
