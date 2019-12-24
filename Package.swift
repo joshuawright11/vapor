@@ -23,7 +23,7 @@ let package = Package(
         .package(url: "https://github.com/vapor/http.git", from: "3.0.0"),
 
         // 🏞 Parses and serializes multipart-encoded data with Codable support.
-        .package(url: "https://github.com/vapor/multipart.git", from: "3.0.0"),
+        .package(url: "https://github.com/joshuawright11/multipart-kit.git", .branch("swiftui-fix")),
 
         // 🚍 High-performance trie-node router.
         .package(url: "https://github.com/vapor/routing.git", from: "3.0.0"),

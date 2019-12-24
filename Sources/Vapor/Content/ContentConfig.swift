@@ -30,7 +30,7 @@ public struct ContentConfig: Service, ServiceType {
         do {
             let encoder = JSONEncoder()
             let decoder = JSONDecoder()
-            if #available(macOS 10.12, *) {
+            if #available(macOS 10.12, iOS 10.0, *) {
                 encoder.dateEncodingStrategy = .iso8601
                 decoder.dateDecodingStrategy = .iso8601
             } else {
